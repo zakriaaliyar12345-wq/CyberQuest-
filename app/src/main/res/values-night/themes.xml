@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style
+        name="Base.Theme.CyberQuest"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="android:windowBackground">#080C10</item>
+
+        <item name="android:statusBarColor">#080C10</item>
+
+        <item name="android:windowLightStatusBar">false</item>
+
+        <item name="android:navigationBarColor">#080C10</item>
+
+        <item name="colorPrimary">#00E676</item>
+
+        <item name="colorSecondary">#00E676</item>
+
+    </style>
+
+    <style
+        name="Theme.CyberQuest"
+        parent="Base.Theme.CyberQuest" />
+
+</resources>

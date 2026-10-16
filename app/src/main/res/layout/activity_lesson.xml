@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070B0F"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CYBERQUEST // SECURITY LESSON"
+            android:textColor="#00E676"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.08"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:id="@+id/tvLessonTopicNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TOPIC 01"
+            android:textColor="#78909C"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvLessonTopicTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phishing"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:id="@+id/tvLessonTopicCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SOC / EMAIL SECURITY"
+            android:textColor="#00E676"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:paddingTop="7dp" />
+
+        <TextView
+            android:id="@+id/tvLessonTopicDifficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DIFFICULTY • EASY"
+            android:textColor="#78909C"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:paddingTop="4dp"
+            android:paddingBottom="22dp" />
+
+        <!-- WHAT IS IT -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="01 // WHAT IS IT?"
+            android:textColor="#00E676"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="#0E141A">
+
+            <TextView
+                android:id="@+id/tvLessonWhatIsIt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lesson content"
+                android:textColor="#CFD8DC"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+        <!-- WHY IT MATTERS -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="02 // WHY IT MATTERS"
+            android:textColor="#00E676"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingTop="25dp"
+            android:paddingBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="#0E141A">
+
+            <TextView
+                android:id="@+id/tvLessonWhyItMatters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lesson content"
+                android:textColor="#CFD8DC"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+        <!-- DETECTION -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="03 // HOW TO DETECT"
+            android:textColor="#00E676"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingTop="25dp"
+            android:paddingBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="#0E141A">
+
+            <TextView
+                android:id="@+id/tvLessonHowToDetect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lesson content"
+                android:textColor="#CFD8DC"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+        <!-- DEFENSE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="04 // HOW TO DEFEND"
+            android:textColor="#00E676"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingTop="25dp"
+            android:paddingBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="#0E141A">
+
+            <TextView
+                android:id="@+id/tvLessonHowToDefend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lesson content"
+                android:textColor="#CFD8DC"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+        <!-- KEY TAKEAWAY -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="05 // KEY TAKEAWAY"
+            android:textColor="#00E676"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingTop="25dp"
+            android:paddingBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="#101A17">
+
+            <TextView
+                android:id="@+id/tvLessonKeyTakeaway"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Key takeaway"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+        <!-- RELATED MISSION -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MISSION CONNECTION"
+            android:textColor="#00E676"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingTop="28dp"
+            android:paddingBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="#0E141A">
+
+            <TextView
+                android:id="@+id/tvLessonMissionStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="→ MISSION 1 READY"
+                android:textColor="#FFCA28"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLessonStartMission"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="14dp"
+                android:text="START RELATED MISSION"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:backgroundTint="#00E676" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLessonBackLearning"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="18dp"
+            android:text="← BACK TO LEARNING CENTER"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#162127" />
+
+        <Button
+            android:id="@+id/btnLessonDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:text="RETURN TO COMMAND CENTER"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:backgroundTint="#00E676" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CYBERQUEST // SECURITY EDUCATION SYSTEM"
+            android:textColor="#455A64"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:paddingBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070B0F"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- HEADER -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CYBERQUEST // COMMAND CENTER"
+            android:textColor="#00E676"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.08"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cybersecurity Training"
+            android:textColor="#FFFFFF"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Investigate. Learn. Defend."
+            android:textColor="#78909C"
+            android:textSize="14sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="22dp" />
+
+        <!-- PLAYER STATUS -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="22dp"
+            android:background="#0E141A">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CURRENT RANK"
+                android:textColor="#78909C"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tvRank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ROOKIE"
+                android:textColor="#90A4AE"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="6dp" />
+
+            <TextView
+                android:id="@+id/tvXp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 XP"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="3dp" />
+
+            <ProgressBar
+                android:id="@+id/progressXp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="15dp"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/tvXpProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0% to next rank • 150 XP"
+                android:textColor="#78909C"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="7dp" />
+
+        </LinearLayout>
+
+        <!-- LEARNING CENTER -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRAINING"
+            android:textColor="#00E676"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingTop="28dp"
+            android:paddingBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="#101A17">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CYBERSECURITY LEARNING CENTER"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Study the concepts behind the missions before putting your skills to the test."
+                android:textColor="#78909C"
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp"
+                android:paddingTop="7dp" />
+
+            <Button
+                android:id="@+id/btnLearning"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="14dp"
+                android:text="📚  OPEN LEARNING CENTER"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:backgroundTint="#00E676" />
+
+        </LinearLayout>
+
+        <!-- MISSIONS -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MISSION OPERATIONS"
+            android:textColor="#00E676"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingTop="28dp"
+            android:paddingBottom="12dp" />
+
+        <!-- MISSION 1 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="#0E141A">
+
+            <TextView
+                android:id="@+id/tvMission1Status"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="▶"
+                android:textColor="#FFCA28"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MISSION 01 • PHISHING DETECTIVE"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMission1State"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="READY TO PLAY"
+                    android:textColor="#FFCA28"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:paddingTop="4dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnMission1"
+                android:layout_width="125dp"
+                android:layout_height="48dp"
+                android:text="START MISSION"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:backgroundTint="#00E676" />
+
+        </LinearLayout>
+
+        <!-- MISSION 2 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="#0E141A">
+
+            <TextView
+                android:id="@+id/tvMission2Status"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="🔒"
+                android:textColor="#5A6469"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MISSION 02 • LOG HUNTER"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMission2State"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LOCKED"
+                    android:textColor="#5A6469"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:paddingTop="4dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnMission2"
+                android:layout_width="125dp"
+                android:layout_height="48dp"
+                android:text="LOCKED"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:backgroundTint="#162127" />
+
+        </LinearLayout>
+
+        <!-- MISSION 3 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="#0E141A">
+
+            <TextView
+                android:id="@+id/tvMission3Status"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="🔒"
+                android:textColor="#5A6469"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MISSION 03 • CIPHER BREAKER"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMission3State"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LOCKED"
+                    android:textColor="#5A6469"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:paddingTop="4dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnMission3"
+                android:layout_width="125dp"
+                android:layout_height="48dp"
+                android:text="LOCKED"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:backgroundTint="#162127" />
+
+        </LinearLayout>
+
+        <!-- MISSION 4 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="#0E141A">
+
+            <TextView
+                android:id="@+id/tvMission4Status"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="🔒"
+                android:textColor="#5A6469"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MISSION 04 • DNS WATCHER"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMission4State"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LOCKED"
+                    android:textColor="#5A6469"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:paddingTop="4dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnMission4"
+                android:layout_width="125dp"
+                android:layout_height="48dp"
+                android:text="LOCKED"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:backgroundTint="#162127" />
+
+        </LinearLayout>
+
+        <!-- MISSION 5 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="#0E141A">
+
+            <TextView
+                android:id="@+id/tvMission5Status"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="🔒"
+                android:textColor="#5A6469"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MISSION 05 • WEB INPUT INSPECTOR"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMission5State"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LOCKED"
+                    android:textColor="#5A6469"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:paddingTop="4dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnMission5"
+                android:layout_width="125dp"
+                android:layout_height="48dp"
+                android:text="LOCKED"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:backgroundTint="#162127" />
+
+        </LinearLayout>
+
+        <!-- MISSION 6 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="#0E141A">
+
+            <TextView
+                android:id="@+id/tvMission6Status"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="🔒"
+                android:textColor="#5A6469"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MISSION 06 • MALWARE BEHAVIOR ANALYST"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMission6State"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LOCKED"
+                    android:textColor="#5A6469"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:paddingTop="4dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnMission6"
+                android:layout_width="125dp"
+                android:layout_height="48dp"
+                android:text="LOCKED"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:backgroundTint="#162127" />
+
+        </LinearLayout>
+
+        <!-- MISSION 7 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="#0E141A">
+
+            <TextView
+                android:id="@+id/tvMission7Status"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="🔒"
+                android:textColor="#5A6469"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MISSION 07 • INCIDENT RESPONDER"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMission7State"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LOCKED"
+                    android:textColor="#5A6469"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:paddingTop="4dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnMission7"
+                android:layout_width="125dp"
+                android:layout_height="48dp"
+                android:text="LOCKED"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:backgroundTint="#162127" />
+
+        </LinearLayout>
+
+        <!-- TOOLS -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COMMAND TOOLS"
+            android:textColor="#00E676"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingTop="28dp"
+            android:paddingBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="👤  PLAYER PROFILE"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#162127" />
+
+        <Button
+            android:id="@+id/btnStatistics"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:text="📊  ANALYTICS"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#162127" />
+
+        <Button
+            android:id="@+id/btnAchievements"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:text="🏆  ACHIEVEMENTS"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#162127" />
+
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:text="📜  MISSION HISTORY"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#162127" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:text="RESET PROGRESS"
+            android:textColor="#FF5252"
+            android:textStyle="bold"
+            android:backgroundTint="#211417" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CYBERQUEST // COMMAND CENTER"
+            android:textColor="#455A64"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:paddingBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
